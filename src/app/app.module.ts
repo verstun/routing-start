@@ -16,6 +16,7 @@ import { ServersService } from './servers/servers.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthService} from './auth.service';
 import { AuthGuard } from './auth-guard.service';
+import { CanDeactivateGuard } from './servers/edit-server/can-desactivate-guard.service';
 /*import { ServerResolver } from './servers/server/server-resolver.service';*/
 
 
@@ -36,7 +37,7 @@ import { AuthGuard } from './auth-guard.service';
         HttpModule,
         AppRoutingModule
     ],
-    providers: [ServersService, AuthService, AuthGuard],
+    providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard],
     bootstrap: [AppComponent]
 })
 export class AppModule {
