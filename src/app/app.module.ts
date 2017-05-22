@@ -16,6 +16,7 @@ import { ServersService } from './servers/servers.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthService} from './auth.service';
 import { AuthGuard } from './auth-guard.service';
+/*import { ServerResolver } from './servers/server/server-resolver.service';*/
 
 
 @NgModule({
